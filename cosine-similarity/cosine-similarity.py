@@ -9,4 +9,4 @@ def cosine_similarity(a, b):
     na, nb = np.linalg.norm(a), np.linalg.norm(b)
     if (not na) or (not nb):
         return 0
-    return float(np.dot(a, b) / (np.linalg.norm(a) * np.linalg.norm(b)))
+    return float(np.dot(a, b) / (na * nb))
